@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+
+.mainContent{
+    display: grid;
+    grid-template-areas: 'tHeader tHeader tHeader'
+                            'navbar navbar navbar'
+                            'lHeader images images'
+                            'bio images images'
+                            'bio images images';
+    grid-gap: 10px;
+}
+
+.heading{
+    text-align: center;
+    border: solid black 2px;
+    background-color: cornflowerblue;
+}
+#heading1{
+    grid-area: tHeader;
+}
+#heading2{
+    grid-area: lHeader;
+}
+.navbar{
+    grid-area: navbar;
+}
+.bio{
+      text-align: center;
+      grid-area: bio;
+      border: 2px solid black;
+
+  }
+.mySlides{
+    width: 250px;
+    height: 250px;
+    display: none;
+    object-fit: cover;
+    /* grid-area: images; */
+}
+.display-container {
+    max-width: 250px;
+    position: relative;
+    border: 2px solid black;
+    grid-area: images
+    
+  }
+
+  
+  

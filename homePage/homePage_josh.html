@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh Donaldson Homepage</title>
+        <link rel='stylesheet' href="styleFile.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class='mainContent'>
+        <!-- heading -->
+            <h1 class="heading" id="heading1">Welcome!</h1>
+            <!-- navigation bar -->
+            <form class='navbar' action="/assignments.html">
+                <button>Assignments</button>
+            </form>
+
+            <h3 class="heading" id="heading2">A Little Bit About Me!</h3>
+            <p class="bio">I hail from a little town in Washington state by the name of Gig Harbor. 
+                I lived there until I was twenty years old and then served a mission in the New Jersey 
+                Morristown mission. I started a bachelors degree in Business management and switched after I took 
+                my first programming class and loved it! Outside of school I like to spend time outside hiking, fishing
+                snowboarding and rock climbing and I am married to my beautiful wife who does most of those things with me!
+            </p>
+        
+            <div class="slide-content display-container">
+                <img class="mySlides" id="mySlides" src="assets/gigHarbor.jpeg">
+                <img class="mySlides" id="mySlides" src="assets/wifeAndI.jpg">
+                <img class="mySlides" id="mySlides" src="assets/hiking.jpg" >
+                <img class="mySlides" id="mySlides" src="assets/snowboarding.jpg">
+                <img class="mySlides" id="mySlides" src="assets/fishing.jpg">
+            </div>
+        </div>
+        <?php echo "Today is " . date("Y/m/d") . "<br>"; ?>
+
+        <script src="homepage.js"></script>
+    </body>
+</html>
